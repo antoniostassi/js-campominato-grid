@@ -9,7 +9,7 @@ start.addEventListener("click", function() {
     
     for (let i=0; i < difficulty; i++) {
         console.log("Create "+i);
-        createNewElement("div", "square", container, difficulty, i+1, "new-bg-square");
+        createNewElement("div", "square", container, "my-col-"+difficulty, i+1, "new-bg-square");
     }
 
 });
@@ -19,7 +19,7 @@ function createNewElement(tagElement, classToAdd, appendTag, gameDifficulty, num
 
     let newElement = document.createElement(tagElement);
     newElement.classList.add(classToAdd);
-    newElement.classList.add("my-col-"+gameDifficulty);
+    newElement.classList.add(gameDifficulty);
     appendTag.append(newElement);
 
     newElement.addEventListener("click", function() {
