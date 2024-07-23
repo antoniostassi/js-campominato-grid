@@ -1,7 +1,10 @@
 
+*{
+    box-sizing:border-box;
+}
+
 .container {
     width:1000px;
-    border: 1px solid black;
     margin:15px auto;
     display:flex;
     flex-wrap:wrap;
